@@ -9,7 +9,7 @@
 </head>
 <body class="flex flex-col items-center px-4">
     <header class="w-full">
-        <nav class="flex flex-row items-center gap-4 px-6 justify-between h-16">
+        <nav class="hidden flex-row items-center gap-4 px-6 justify-between h-16 lg:flex">
             <div class="flex flex-row uppercase">
                 <img src="/capstone_colmar_assets/images/ic-logo.svg" alt="logo">
                 <h1 class="lg:text-2xl"><span class="font-bold">Colmar</span>Academy</h1>
@@ -21,10 +21,26 @@
                     <a href="">Sign in</a>
             </div>
         </nav>
+        <nav>
+            <div class="flex justify-evenly items-center h-16 bg-white w-full fixed top-0 left-0 lg:hidden ">
+                <a href="">
+                    <img src="/capstone_colmar_assets/images/ic-logo.svg" alt="">
+                </a>
+                <a href="">
+                    <img src="/capstone_colmar_assets/images/ic-on-campus.svg" alt="">
+                </a>
+                <a href>
+                <img src="/capstone_colmar_assets/images/ic-online.svg" alt="">
+                </a>
+                <a href="">
+                    <img src="/capstone_colmar_assets/images/ic-login.svg" alt="">
+                </a>
+            </div>
+        </nav>
     </header>
     <main class="w-full">
-        <section class="flex flex-col gap-6 lg:px-6 lg:py-8 bg-[#D8D8D8] lg:flex-row lg:justify-center ">
-            <img class="w-full lg:w-[60%]"
+        <section class="flex flex-col gap-6 py-[64px] lg:px-6 lg:py-8 bg-[#D8D8D8] lg:flex-row ">
+            <img class="flex w-full lg:w-[60%]"
             src="/capstone_colmar_assets/images/banner.jpg" alt="banner">
             <div class="flex flex-col items-start justify-center mx-4">
                 <h2 class="text-5xl text-[#4A4A4A] font-bold max-w-[16ch] mb-8 text-left">
@@ -37,7 +53,7 @@
             </div>
         </section>
         <section class="flex flex-col px-6 py-8 w-full gap-6 lg:flex-row">
-            <article class="hidden flex-col w-full lg:w-[62%] lg:block">
+            <article class="hidden flex-col w-full lg:w-[62%] lg:flex">
                 <img class="mb-8"
                 src="/capstone_colmar_assets/images/information-main.jpg" alt="information main">
                 <h2 class="text-5xl font-bold text-[#4A4A4A] mb-6">It doesn't hurt to keep practicing</h2>
@@ -48,7 +64,9 @@
             </article>
             <article class="flex flex-col w-full lg:w-[40%]">
                 <div class="flex flex-col gap-4 p-4  hover:bg-[#D8D8D8] lg:flex-row">
-                    <img class="h-auto w-full lg:w-[40%]"
+                    <img class="flex h-auto w-full lg:w-[40%] lg:hidden"
+                    src="/capstone_colmar_assets/images/information-orientation-mobile.jpg" alt="information orientation">
+                    <img class="hidden h-auto w-full lg:w-[40%] lg:flex"
                     src="/capstone_colmar_assets/images/information-orientation.jpg" alt="information orientation">
                     <div class="flex flex-col justify-center px-4">
                         <h3 class="text-2xl font-bold text-[#4A4A4A] mb-2">Orientation date</h3>
@@ -57,7 +75,9 @@
                     </div>
                 </div>
                 <div class="flex flex-col gap-4 p-4 hover:bg-[#D8D8D8] lg:flex-row">
-                    <img class="h-auto w-full lg:w-[40%]"
+                    <img class="flex h-auto w-full lg:w-[40%] lg:hidden"
+                    src="/capstone_colmar_assets/images/information-campus-mobile.jpg" alt="information campus">
+                    <img class="hidden h-auto w-full lg:w-[40%] lg:flex"
                     src="/capstone_colmar_assets/images/information-campus.jpg" alt="information campus">
                     <div class="flex flex-col justify-center px-4"">
                         <h3 class="text-2xl font-bold text-[#4A4A4A] mb-2"">Our campus</h3>
@@ -66,7 +86,9 @@
                     </div>
                 </div>
                 <div class="flex flex-col gap-4 p-4 hover:bg-[#D8D8D8] lg:flex-row">
-                    <img class="h-auto w-full lg:w-[40%]"
+                    <img class="flex h-auto w-full lg:w-[40%] lg:hidden"
+                    src="/capstone_colmar_assets/images/information-guest-lecture-mobile.jpg" alt="information guest lecture">
+                    <img class="hidden h-auto w-full lg:w-[40%] lg:flex"
                     src="/capstone_colmar_assets/images/information-guest-lecture.jpg" alt="information guest lecture">
                     <div class="flex flex-col justify-center px-4">
                         <h3 class="text-2xl font-bold text-[#4A4A4A] mb-2" >Our guest lecture</h3>
@@ -128,10 +150,10 @@
             <div class="flex flex-col gap-4 lg:flex-row">
                 <article class="w-full lg:w-[60%]" >
                     <video src="/capstone_colmar_assets/videos/thesis.mp4"></video>
-                    <h2 class="text-3xl font-semibold mt-6 mb-2">Reimagine urban</h2>
-                    <p>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat nuque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
+                    <h2 class="hidden text-3xl font-semibold mt-6 mb-2 lg:flex">Reimagine urban</h2>
+                    <p class="hidden lg:flex">"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat nuque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
                 </article>
-                <article class="flex flex-col w-full lg:w-[40%]">
+                <article class="hidden flex-col w-full lg:w-[40%] lg:flex">
                     <div class="flex flex-col gap-4 p-4  hover:bg-[#D8D8D8] lg:flex-row">
                         <img class="w-full lg:w-[35%]" src="/capstone_colmar_assets/images/thesis-fisma.jpg" alt="fisma">
                         <div class="flex flex-col justify-center px-4 w-full lg:w-[65%]">
@@ -150,9 +172,9 @@
             </div>
         </section>
     </main>
-    <footer class="flex flex-col items-center gap-4 w-full px-6 py-4 lg:flex-row lg:justify-between">
+    <footer class="flex flex-col items-center gap-4 w-full px-6 py-4 mt-6 lg:flex-row lg:justify-between lg:mt-0">
         <p>&copy 2016 Colmar Academy. All rights reserved</p>
-        <div class="flex flex-col gap-4 lg:flex-row">
+        <div class="hidden flex-row gap-4 lg:flex">
             <a href="">Terms</a>
             <a href="">Privacy</a>
         </div>
